@@ -11,162 +11,56 @@
   flex-direction: column;
   align-items: center;
 }
-  header .pilar{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: start;
 
-  }
-  header  .pilar .menu {
-    padding: 10px;
-    position: absolute;
-    left: 0;
-  }
-
-  .pilar .topo-superior {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
- .pilar .topo-superior .logo-ifro {
-    display: flex;
-    align-items:center;
-    font-weight: 900;
-    gap: 10px;
-  }
-
-  .pilar .topo-superior .logo-ifro .ifro {
-    background-color: #15803D;
-  color: white;
-  font-weight: 900;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 5px;
-  border: 1px solid black;
-  }
-
-  header .pilar .topo-superior .logo-ifro .ifro {
-    background-color: #15803D;
-    padding: 10px;
-  }
-
-  header .pilar .topo-superior ul {
-    display: flex;
-    list-style: none;
-    gap: 17px;
-  }
-  header .pilar .topo-superior ul li a {
-    text-decoration: none;
-    color: #4B5563;
-  }
-  header .pilar .topo-inferior {
-    position: absolute;
-    left: -350px;
-  }
-
-  header .pilar .topo-inferior.ativo {
-    top: 0px;
-    left: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #15803D;
-    color: white;
-    height: 100%;
-  }
-
-  header .pilar .topo-inferior.ativo .options {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  header .pilar .topo-inferior.ativo .options .lista{
-    display: flex;
-    gap: 15px;
-  }
-
-  header .pilar .topo-inferior .logo-ifro {
-    display: none;
-  }
-  header .pilar .topo-inferior .search {
-    display: none;
-  }
-
-@media(min-width: 768px){
-  
-  #app {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header{
-  width: 100%;
-  max-width: 1200px;
-}
-
-  header .pilar {
-  display: flex;
-  flex-direction: column;
-  align-items: normal;
-  gap: 10px;
-  margin-top: 20px;
-  width: 100%;
-}
-.pilar .topo-superior {
+header .pilar {
   display: flex;
   flex-direction: row-reverse;
-  /* align-items: normal; */
-}
-.pilar .topo-superior nav ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  gap: 17px;
-}
-.pilar .topo-superior .logo-ifro {
-  display: none;
+  align-items: start;
+
 }
 
-.pilar .topo-superior nav ul li a {
- text-decoration: none;
- color: #4B5563;
+header .pilar .menu, header .pilar .fechar {
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  transition: opacity 0.3s ease;
+  /* filter: brightness(0) invert(1); */
 }
 
 header .pilar .menu{
-  display: none;
+  opacity: 1;
 }
-header .pilar .topo-inferior, header .pilar .topo-inferior.ativo {
-  position: relative;
-  left: auto;
-  top: auto;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: white;
-  height: auto;
-  color: #4B5563;
+header .pilar .fechar{
+  opacity: 0;
 }
 
-header .pilar .topo-inferior .logo-ifro {
+header .pilar .menu.ativo {
+  filter: invert();
+  opacity: 0;
+}
+
+header .pilar .fechar.ativo {
+  filter: invert();
+  opacity: 1;
+}
+
+.pilar .topo-superior {
   display: flex;
-  max-width:200px ;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-weight: 900;
-  color: #15803D;
+  margin-top: 20px;
 }
 
-header .pilar .topo-inferior .logo-ifro .ifro{
+.pilar .topo-superior .logo-ifro {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pilar .topo-superior .logo-ifro .ifro {
   background-color: #15803D;
   color: white;
   font-weight: 900;
@@ -179,34 +73,240 @@ header .pilar .topo-inferior .logo-ifro .ifro{
   border: 1px solid black;
 }
 
-header .pilar .topo-inferior .options, header .pilar .topo-inferior.ativo .options {
-  padding-top: 0px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 25px;
-  font-weight: 900;
+header .pilar .topo-superior .logo-ifro .ifro {
+  background-color: #15803D;
+  padding: 10px;
 }
 
-header .pilar .topo-inferior .options .lista {
+header .pilar .topo-superior ul {
   display: flex;
-  gap: 15px;
+  list-style: none;
+  gap: 17px;
 }
 
-header .pilar .topo-inferior .search {
+header .pilar .topo-superior ul li a {
+  text-decoration: none;
+  color: #4B5563;
+}
+
+.pilar .topo-superior .search {
   display: flex;
+  margin-top: 20px;
   align-items: center;
-  gap: 10px;
+
+  gap: 12px;
 }
-header .pilar .topo-inferior .search input {
-  border: none;
-  border-bottom: 1px solid #4B5563;
-}
-header .pilar .topo-inferior .search input[type="search"]:focus{
+
+.pilar .topo-superior .search input[type="search"]:focus {
   outline: none;
   box-shadow: none;
   border-color: transparent;
   border-bottom: 1px solid #4B5563;
 }
+
+.pilar .topo-superior .search input[type="search"] {
+  border: none;
+  border-bottom: 1px solid black;
+  gap: 12px;
+}
+
+header .pilar .topo-inferior {
+  position: absolute;
+  left: -350px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #15803D;
+  color: white;
+  height: 100%;
+  transition: 0.3s;
+}
+
+header .pilar .topo-inferior.ativo {
+  top: 0px;
+  left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #15803D;
+  color: white;
+  height: 100%;
+}
+
+header .pilar .topo-inferior .options {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+header .pilar .topo-inferior .options a {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+}
+
+header .pilar .topo-inferior .options .lista {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .pilar .topo-inferior .options .lista a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+
+  }
+
+header .pilar .topo-inferior .options .lista .seta {
+  height: 8px;
+  filter: invert();
+}
+
+header .pilar .topo-inferior .logo-ifro {
+  display: none;
+}
+
+header .pilar .topo-inferior .search {
+  display: none;
+}
+
+@media(min-width: 768px) {
+
+  #app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  header .pilar {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .pilar .topo-superior {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+    /* align-items: normal; */
+  }
+
+  .pilar .topo-superior nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .pilar .topo-superior .logo-ifro {
+    display: none;
+  }
+
+  .pilar .topo-superior .search {
+    display: none;
+  }
+
+  .pilar .topo-superior nav ul li a {
+    text-decoration: none;
+    color: #4B5563;
+  }
+
+  header .pilar .menu {
+    display: none;
+  }
+
+  header .pilar .topo-inferior,
+  header .pilar .topo-inferior.ativo {
+    position: relative;
+    left: auto;
+    top: auto;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    height: auto;
+    color: #4B5563;
+    transition: none;
+  }
+
+  header .pilar .topo-inferior .logo-ifro {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    color: #15803D;
+  }
+
+  header .pilar .topo-inferior .logo-ifro .ifro {
+    background-color: #15803D;
+    color: white;
+    font-weight: 900;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  header .pilar .topo-inferior .options,
+  header .pilar .topo-inferior.ativo .options {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    font-weight: 900;
+  }
+  header .pilar .topo-inferior .options a,
+  header .pilar .topo-inferior.ativo .options a{
+    text-decoration: none;
+    color: #4B5563;
+  }
+
+  header .pilar .topo-inferior .options .lista {
+    display: flex;
+    gap: 15px;
+  }
+
+  header .pilar .topo-inferior .options .lista a{
+    text-decoration: none;
+    color: #4B5563;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  header .pilar .topo-inferior .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  header .pilar .topo-inferior .search input {
+    border: none;
+    border-bottom: 1px solid #4B5563;
+  }
+
+  header .pilar .topo-inferior .search input[type="search"]:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+    border-bottom: 1px solid #4B5563;
+  }
 
 }
