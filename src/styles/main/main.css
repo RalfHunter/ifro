@@ -25,7 +25,8 @@ main > .pilar >  .esquerda > .topo{
 main > .pilar > .esquerda > .topo > div:nth-child(1){
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 300px;
+    align-self: center;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -52,16 +53,16 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card {
     flex-direction: column;
     justify-content: space-between;
     gap:10px;
-    max-width: 460px;
+    max-width: 300px;
     height: inherit;
     width: inherit;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* background-color: green; */
 }
-main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:hover{
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:active{
     box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
 
 }
@@ -70,7 +71,8 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(1) > di
     /* justify-content: center; */
     height: 200px;
     align-self: center;
-    width: 462px;
+    width: 300px;
+    min-width: auto;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     background-position: center;
@@ -83,13 +85,17 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > di
     align-self: center;
     /* justify-content: ; */
     height: 200px;
-    width: 462px;
+    width: 300px;
+    min-width: auto;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(/public/Image.png);
+    /* align-items: center;
+    justify-content: end; */
+    background-color: red;
 }
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > div:nth-child(1) > div{
     background-color: #15803D;
@@ -98,10 +104,16 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > di
     padding: 10px;
     color: white;
     font-size: 12px;
+    /* position: absolute;
+    left: 50px; */
 }
 
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2){
     padding: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) > div:nth-child(1){
     display: flex;
@@ -111,6 +123,8 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2
     align-items: center;
     color: #6B7280;
     margin-bottom: 20px;
+    /* background-color: red; */
+    /* flex-wrap: wrap; */
 }
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) .ler-mais{
     color: green;
@@ -151,7 +165,7 @@ main > .pilar > .esquerda > .topo > .eventos > .evento {
     border-radius: 8px;
     padding-right: 40px;
 }
-main > .pilar > .esquerda > .topo > .eventos > .evento:hover{
+main > .pilar > .esquerda > .topo > .eventos > .evento:active{
     cursor: pointer;
     box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
 }
@@ -171,6 +185,8 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
 
     margin-top: 40px;
     margin-bottom: 20px;
+    align-self: center;
+    justify-self: center;
 }
 
 .baixo .campi {
@@ -191,7 +207,7 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-.baixo .campi .campus:hover{
+.baixo .campi .campus:active{
     box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
     cursor: pointer;
 }
@@ -292,7 +308,7 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
     padding-left: 20px;
     cursor: pointer;
 }
-.direita > div:nth-child(1) > div > div:hover{
+.direita > div:nth-child(1) > div > div:active{
     background-color: yellow;
     filter: brightness(1.2);
 }
@@ -430,7 +446,10 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card {
 }
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:hover{
     box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
-
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:active{
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+    filter: brightness(1.2);
 }
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(1) > div:nth-child(1) {
     display: flex;
@@ -489,6 +508,7 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > .ler-mais:hover
     
 }
 
+
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > .ler-mais::after{
     content:"→";
 }
@@ -522,6 +542,10 @@ main > .pilar > .esquerda > .topo > .eventos > .evento:hover{
     cursor: pointer;
     box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
 }
+main > .pilar > .esquerda > .topo > .eventos > .evento:active{
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+    filter: brightness(1.2);
+}
 main > .pilar > .esquerda > .topo > .eventos .evento > div > div {
     display: flex;
     background-color: #DCFCE7;
@@ -535,9 +559,11 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
 }
 
 .baixo > h3 {
-
+    /* display: flex; */
     margin-top: 40px;
     margin-bottom: 20px;
+    justify-self: unset;
+
 }
 
 .baixo .campi {
@@ -561,6 +587,10 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
 .baixo .campi .campus:hover{
     box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
     cursor: pointer;
+}
+.baixo .campi .campus:active{
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+    filter: brightness(0.9);
 }
 .baixo .campi .campus .nome{
     display: flex;
@@ -655,6 +685,10 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
 .direita > div:nth-child(1) > div > div:hover{
     background-color: yellow;
     filter: brightness(1.2);
+}
+.direita > div:nth-child(1) > div > div:active{
+    background-color: yellow;
+    filter: brightness(0.9);
 }
 .direita > div:nth-child(2) > div {
     display: flex;
