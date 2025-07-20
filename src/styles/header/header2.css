@@ -1,0 +1,189 @@
+
+   header > .pilar:nth-child(2) {
+    margin-top: 20px ;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #15803D;
+    width: 100%;
+    padding-bottom: 60px;
+}   
+    header > .pilar:nth-child(2) > .sub-pilar{
+        width: calc(100% - 40px);
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 360px;
+        gap: 80px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        gap:20px;
+        color: white;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) h1 {
+        max-width: 320px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1)> div button {
+        height: 50px;
+        width: 183px;
+        border-radius: 6px;
+        border: none;
+        filter: brightness(1.0);
+        transition: 0.3s;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1)> div button:nth-child(1){
+        background-color: white;
+        color: #15803D;
+        /* filter: brightness(1.0); */
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1)> div button:nth-child(1):hover{
+        cursor: pointer;
+        /* filter: brightness(1.2); */
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(1):active{
+        filter: brightness(1.9);
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(2){
+        color: white;
+        background-color: #16A34A;
+        border: 1px solid #22C55E;
+        filter: brightness(1.0);
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(2):hover{
+        cursor: pointer;
+        
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(2):active{
+        filter: brightness(1.9);
+    }
+    /* header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(2):focus{
+        filter: brightness(1.0);
+    } */
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) {
+        background-color: #16A34A;
+        padding: 20px;
+        display: flex;
+        border-radius: 8px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div {
+        display: flex;
+        gap: 16px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div button {
+        width: 153px;
+        height: 48px;
+        border-radius: 4px;
+        border: none;
+        background-color: #22C55E;
+        color: white;
+        filter: brightness(1.0);
+        transition: 0.2s;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div button:hover{
+        cursor: pointer;
+        
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div button:active{
+        filter: brightness(1.9);
+    }
+@media(min-width:768px){
+    header > .pilar:nth-child(2) {
+    margin-top: 20px ;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #15803D;
+    width: 100%;
+    padding-bottom: 60px;
+}   
+    header > .pilar:nth-child(2) > .sub-pilar{
+        width: calc(100% - 40px);
+        max-width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        color: white;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) h1 {
+        max-width: 320px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div{
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: auto;
+        gap: 16px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1)> div button {
+        height: 50px;
+        width: 183px;
+        border-radius: 6px;
+        border: none;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1)> div button:nth-child(1){
+        background-color: white;
+        color: #15803D;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1)> div button:nth-child(1):hover{
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(1):active{
+        filter: brightness(0.9);
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(2){
+        color: white;
+        background-color: #16A34A;
+        border: 1px solid #22C55E;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(2):hover{
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(1) > div button:nth-child(2):active{
+        filter: brightness(0.9);
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) {
+        background-color: #16A34A;
+        padding: 20px;
+        display: flex;
+        border-radius: 8px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div {
+        display: flex;
+        gap: 16px;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div button {
+        width: 153px;
+        height: 48px;
+        border-radius: 4px;
+        border: none;
+        background-color: #22C55E;
+        color: white;
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div button:hover{
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+    header > .pilar:nth-child(2) > .sub-pilar > div:nth-child(2) div button:active{
+        filter: brightness(.9);
+    }
+}
+
+

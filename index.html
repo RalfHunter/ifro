@@ -1,65 +1,300 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app">
-      <header>
-        <div class="pilar">
-          <div class="topo-superior">
-            <nav>
-              <ul>
-                <li><a href="">Acessibilidade</a></li><span class="paipe">|</span>
-                <li><a href="">Contato</a></li><span class="paipe">|</span>
-                <li><a href="">Ouvidoria</a></li>
-              </ul>
-            </nav>
-            <div class="logo-ifro">
-              <div class="ifro">IFRO</div>
-              <div>Instituto Federal de Rondônia</div>
-            </div>
-            <div class="search">
-              <input type="search">
-              <img src="/public/search.svg" alt="">
-            </div>
-          </div>
-          <hr>
-          <div class="topo-inferior">
-            <div class="logo-ifro">
-              <div class="ifro">IFRO</div>
-              <div>Instituto Federal de Rondônia</div>
-            </div>
-            <div class="options">
-              <div class="lista">
-                <div><a href="">Institucional <img src="/public/Vector.svg" alt="" class="seta"></a></div>
-              </div>
-              <div class="lista">
-                <div><a href="">Ensino <img src="/public/Vector.svg" alt="" class="seta"></a></div>
-                
-              </div>
-              <div><a href="">Pesquisa</a></div>
-              <div><a href="">Extensão</a></div>
-              <div><a href="">Campi</a></div>
-            </div>
-            <div class="search">
-              <input type="search">
-              <img src="/public/search.svg" alt="">
-            </div>
-          </div>
-          <img src="/public/x.svg" alt="" class="fechar">
-          <img src="/public/align-justify.svg" alt="" class="menu">
-        </div>
-      </header>
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="menu-lateral">
+      <nav>
+        <ul>
+          <li><a href="#">Pesquisa</a></li>
+          <li><a href="#">Extensão</a></li>
+          <li><a href="#">Campi</a></li>
+          <li><a href="#">Institucional<img src="/public/Vector.svg" alt=""></a></li>
+          <li><a href="#">Ensino<img src="/public/Vector.svg" alt=""></a></li>
+        </ul>
+      </nav>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <header>
+      <div class="pilar">
+        <div class="topo-superior">
+          <nav>
+            <ul>
+              <li><a href="#">Acessibilidade</a></li><span class="paipe">|</span>
+              <li><a href="#">Contato</a></li><span class="paipe">|</span>
+              <li><a href="#">Ouvidoria</a></li>
+            </ul>
+          </nav>
+          <hr class="min">
+          <div class="logo-ifro">
+            <div class="ifro">IFRO</div>
+            <div>Instituto Federal de Rondônia</div>
+          </div>
+          <div class="search">
+            <input type="search">
+            <img src="/public/search.svg" alt="">
+          </div>
+        </div>
+        <hr>
+        <div class="topo-inferior">
+          <div class="logo-ifro">
+            <div class="ifro">IFRO</div>
+            <div>Instituto Federal de Rondônia</div>
+          </div>
+          <div class="options">
+            <div class="lista">
+              <div><a href="">Institucional <img src="/public/Vector.svg" alt="" class="seta"></a></div>
+            </div>
+            <div class="lista">
+              <div><a href="">Ensino <img src="/public/Vector.svg" alt="" class="seta"></a></div>
+
+            </div>
+            <div><a href="">Pesquisa</a></div>
+            <div><a href="">Extensão</a></div>
+            <div><a href="">Campi</a></div>
+          </div>
+          <div class="search">
+            <input type="search">
+            <img src="/public/search.svg" alt="">
+          </div>
+        </div>
+        <img src="/public/x.svg" alt="" class="fechar">
+        <img src="/public/align-justify.svg" alt="" class="menu">
+      </div>
+      <div class="pilar">
+        <div class="sub-pilar">
+          <div>
+            <h1>Instituto Federal de Rondônia</h1>
+            <p>Educação, Ciência e Tecnologia para o desemvolvimento de Rondônia</p>
+            <div>
+              <button>Processo seletivo</button>
+              <button>Cursos Oferecidos</button>
+            </div>
+          </div>
+          <div>
+            <h4>Acesso Rápido</h4>
+            <div>
+              <button>Portal do Aluno</button>
+              <button>Portal do Servidor</button>
+            </div>
+            <div>
+              <button>Biblioteca</button>
+              <button>Ouvidoria</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="pilar">
+        <div class="esquerda">
+          <div class="topo">
+            <div>
+              <h2>Noticias e Eventos</h2>
+              <div>Ver todas</div>
+            </div>
+            <div class="cards-fotos">
+              <div>
+                <div class="card">
+                  <div>
+                  </div>
+                  <div>
+                    <div><img src="/public/calendario.svg" alt="">
+                      <div>15 de maio de 2023</div>
+                    </div>
+                    <h4>Iniciadas as matrículas on-line em primeira chamada do Processo Seletivo</h4>
+                    <p>Os candidatos aprovados devem acessar o portal do candidato para realizar sua matrícula até o dia
+                      20 de maio.</p>
+                    <div class="ler-mais">Leia mais →</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div>
+                    <div class="destaque">Destaque</div>
+                  </div>
+                  <div>
+                    <div><img src="/public/calendario.svg" alt="">
+                      <div>15 de maio de 2023</div>
+                    </div>
+                    <h4>Aberta consulta pública sobre regulamento de heteroidentificação em processos seletivos</h4>
+                    <p>A comunidade pode enviar sugestões até o dia 30 de maio de 2023 para o aprimoramento do
+                      documento.</p>
+                    <div class="ler-mais">Leia mais →</div>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+            <div class="eventos">
+              <div class="evento">
+                <div>
+                  <div><img src="/public/livro.svg" alt=""></div>
+                </div>
+                <div>
+                  <h4>Resultado final - 2ª Chamada</h4>
+                  <p>Confira a lista de aprovados na segunda chamada do processo seletivo 2023/1.</p>
+                </div>
+              </div>
+              <div class="evento">
+                <div>
+                  <div><img src="/public/pessoas.svg" alt=""></div>
+                </div>
+                <div>
+                  <h4>Semana da Tecnologia</h4>
+                  <p>Participe da Semana de Tecnologia do IFRO de 12 a 16 de junho.</p>
+                </div>
+              </div>
+              <div class="evento">
+                <div>
+                  <div><img src="/public/calendario2.svg" alt=""></div>
+                </div>
+                <div>
+                  <h4>Calendário Acadêmico</h4>
+                  <p>Consulte o calendário acadêmico atualizado para o semestre 2023/1.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="baixo">
+            <h3>Nossos Campi</h3>
+            <div class="campi">
+              <div class="campus">
+                <div class="foto"></div>
+                <div class="nome">
+                  <div class="local">
+                    <img src="/public/local.svg" alt="">
+                  </div>
+                  <div>
+                    <h4>Porto Velho Zona Norte</h4>
+                  </div>
+                </div>
+                <div class="ler-mais">Conhecer</div>
+              </div>
+              <div class="campus">
+                <div class="foto"></div>
+                <div class="nome">
+                  <div class="local">
+                    <img src="/public/local.svg" alt="">
+                  </div>
+                  <div>
+                    <h4>Porto Velho Calama</h4>
+                  </div>
+                </div>
+                <div class="ler-mais">Conhecer</div>
+              </div>
+              <div class="campus">
+                <div class="foto"></div>
+                <div class="nome">
+                  <div class="local">
+                    <img src="/public/local.svg" alt="">
+                  </div>
+                  <div>
+                    <h4>Ariquemes</h4>
+                  </div>
+                </div>
+                <div class="ler-mais">Conhecer</div>
+              </div>
+              <div class="campus">
+                <div class="foto"></div>
+                <div class="nome">
+                  <div class="local">
+                    <img src="/public/local.svg" alt="">
+                  </div>
+                  <div>
+                    <h4>Ji-Paraná</h4>
+                  </div>
+                </div>
+                <div class="ler-mais">Conhecer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="direita">
+          <div>
+            <div>
+              <h3>Acesso Rápido</h3>
+              <div>
+                <div>
+                  <img src="/public/humano.svg" alt="">
+                </div>
+                <div>Portal do Aluno</div>
+              </div>
+              <div>
+                <div>
+                  <img src="/public/humano.svg" alt="">
+                </div>
+                <div>Portal do Servidor</div>
+              </div>
+              <div>
+                <div>
+                  <img src="/public/livro.svg" alt="">
+                </div>
+                <div>Biblioteca Virtual</div>
+              </div>
+              <div>
+                <div>
+                  <img src="/public/calendario2.svg" alt="">
+                </div>
+                <div>Calendário Acadêmico</div>
+              </div>
+               <div>
+                <div>
+                  <img src="/public/download.svg" alt="">
+                </div>
+                <div>Documentos e Formulários</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3>Processo Seletivo</h3>
+              <div>
+                <div>
+                  <h4>Inscrições Abertas</h4>
+                  <p>Cursos Técnicos e Superiores - 2023/2</p>
+                  <p>Saiba mais →</p>
+                </div>
+              </div>
+              <div class="portal">
+                <img src="/public/portal.svg" alt="">
+                <div>Acessar Portal de Seleção    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3>Contato</h3>
+              <div>
+                <p>Reitoria</p>
+                <p><img src="/public/telefone.svg" alt="">(69) 2182-9600</p>
+                <p>Hórario de Atendimento:</p>
+                <p>Segunda a sexta, das 8h às 12h e das 14h às 18h</p>
+                <p>Ver todos os contatos →</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

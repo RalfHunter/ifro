@@ -1,0 +1,729 @@
+ main > .pilar {
+    /* width: 1400px; */
+    max-width: 1400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+}
+main > .pilar >  .esquerda{
+    width: 100%;
+    /* background-color: red;   */
+}
+main > .pilar >  .esquerda > .topo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+
+main > .pilar > .esquerda > .topo > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main > .pilar > .esquerda > .topo > div:nth-child(1) > div{
+    color: green;
+    font-size: 13px;
+    cursor: pointer;
+}
+main > .pilar > .esquerda > .topo > .cards-fotos {
+    width: 100%;
+}
+main > .pilar > .esquerda > .topo > .cards-fotos > div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    max-width: 460px;
+    height: inherit;
+    width: inherit;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    flex-wrap: wrap;
+    /* background-color: green; */
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:hover{
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    /* justify-content: center; */
+    height: 200px;
+    align-self: center;
+    width: 462px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/public/Image2.png);
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    align-self: center;
+    /* justify-content: ; */
+    height: 200px;
+    width: 462px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/public/Image.png);
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > div:nth-child(1) > div{
+    background-color: #15803D;
+    height: fit-content;
+    border-top-left-radius: inherit;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2){
+    padding: 20px;
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) > div:nth-child(1){
+    display: flex;
+    align-self: self-start;
+    gap: 20px;
+    font-size: 12px;
+    align-items: center;
+    color: #6B7280;
+    margin-bottom: 20px;
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) .ler-mais{
+    color: green;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > .ler-mais:hover{
+    cursor: pointer;
+    
+}
+
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > .ler-mais::after{
+    content:"→";
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) > h4{
+    line-height: 30px;
+}
+
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) > p{
+    line-height: 25px;
+}
+main > .pilar > .esquerda > .topo > .eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+main > .pilar > .esquerda > .topo > .eventos > .evento {
+    display: flex;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 260px;
+    line-height: 25px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 8px;
+    padding-right: 40px;
+}
+main > .pilar > .esquerda > .topo > .eventos > .evento:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+}
+main > .pilar > .esquerda > .topo > .eventos .evento > div > div {
+    display: flex;
+    background-color: #DCFCE7;
+    padding: 15px;
+    border-radius: 50%;
+}
+main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.baixo > h3 {
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.baixo .campi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.baixo .campi .campus {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    height: 273px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.baixo .campi .campus:hover{
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+    cursor: pointer;
+}
+.baixo .campi .campus .nome{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 15px;
+
+}
+.baixo .campi .campus .ler-mais {
+    color: #15803D;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.baixo .campi .campus .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/Porto1.png);
+}
+.baixo .campi .campus:nth-child(2) .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/Porto2.png);
+}
+.baixo .campi .campus:nth-child(3) .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/ariquemes.jfif);
+}
+.baixo .campi .campus:nth-child(4) .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/ji-parana.png);
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+    /* background-color: red */
+}
+
+
+.direita > div:nth-child(1) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    align-items: center ;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+    /* background-color: red; */
+}
+.direita > div:nth-child(1) > div h3 {
+    /* background-color: red; */
+    width: 100%;
+}
+.direita > div:nth-child(1) > div > div {
+    display: flex;
+    width: 100%;
+    min-width: 250px;
+    /* width: 200px; */
+    background-color: #F9FAFB;
+    border-radius: 6px;
+    gap: 10px;
+    color: #374151;
+    height: 48px;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.direita > div:nth-child(1) > div > div:hover{
+    background-color: yellow;
+    filter: brightness(1.2);
+}
+.direita > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    align-items: center ;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+}
+.direita > div:nth-child(2) > div h3 {
+    /* background-color: red; */
+    width: 100%;
+}
+.direita > div:nth-child(2) > div > div > div:nth-child(1){
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-self: center;
+    background-color: #a9f5bc49;
+    border-radius: 6px;
+
+}
+.direita > div:nth-child(2) > div > div > div > h4{
+    color: #166534;
+}
+.direita > div:nth-child(2) > div > div > div:nth-child(1) > p{
+    color: #6B7280;
+    font-size: 17px;
+}
+.direita > div:nth-child(2) > div > div > div:nth-child(1) > p:nth-child(3){
+    color: #15803D;
+    cursor: pointer;
+}
+.direita > div:nth-child(2) > div >  .portal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #166534;
+    align-self: self-start  ;
+    cursor: pointer;
+} 
+.direita > div:nth-child(3) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    padding: 30px;
+    align-items: start ;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+    
+}
+.direita > div:nth-child(3) > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.direita > div:nth-child(3) > div > div:nth-child(2) > p{
+    display: flex;
+    color: #374151;
+    gap: 10px;
+}
+.direita > div:nth-child(3) > div > div:nth-child(2) > p:nth-child(5){
+    color: #15803D;
+    cursor: pointer;
+
+}
+@media(min-width:768px){
+    main > .pilar {
+    /* width: 1400px; */
+    max-width: 1400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    /* background-color: rebeccapurple; */
+}
+main > .pilar >  .esquerda{
+    width: 100%;
+    /* background-color: red;   */
+}
+main > .pilar >  .esquerda > .topo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+
+main > .pilar > .esquerda > .topo > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main > .pilar > .esquerda > .topo > div:nth-child(1) > div{
+    color: green;
+    font-size: 13px;
+    cursor: pointer;
+}
+main > .pilar > .esquerda > .topo > .cards-fotos {
+    width: 100%;
+}
+main > .pilar > .esquerda > .topo > .cards-fotos > div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    /* border: 1px solid green; */
+    /* padding: 20px; */
+    max-width: 460px;
+    height: inherit;
+    width: inherit;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    /* background-color: green; */
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:hover{
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    /* justify-content: center; */
+    height: 200px;
+    align-self: center;
+    width: 462px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/public/Image2.png);
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    align-self: center;
+    /* justify-content: ; */
+    height: 200px;
+    width: 462px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/public/Image.png);
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > div:nth-child(1) > div{
+    background-color: #15803D;
+    height: fit-content;
+    border-top-left-radius: inherit;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2){
+    padding: 20px;
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) > div:nth-child(1){
+    display: flex;
+    align-self: self-start;
+    gap: 20px;
+    font-size: 12px;
+    align-items: center;
+    color: #6B7280;
+    margin-bottom: 20px;
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) .ler-mais{
+    color: green;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > .ler-mais:hover{
+    cursor: pointer;
+    
+}
+
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > .ler-mais::after{
+    content:"→";
+}
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) > h4{
+    line-height: 30px;
+}
+
+main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card > div:nth-child(2) > p{
+    line-height: 25px;
+}
+main > .pilar > .esquerda > .topo > .eventos {
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+main > .pilar > .esquerda > .topo > .eventos > .evento {
+    display: flex;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 260px;
+    line-height: 25px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 8px;
+    padding-right: 40px;
+}
+main > .pilar > .esquerda > .topo > .eventos > .evento:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+}
+main > .pilar > .esquerda > .topo > .eventos .evento > div > div {
+    display: flex;
+    background-color: #DCFCE7;
+    padding: 15px;
+    border-radius: 50%;
+}
+main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.baixo > h3 {
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.baixo .campi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+    flex-wrap: wrap;
+    gap: 0px;
+    
+}
+
+.baixo .campi .campus {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    height: 273px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.baixo .campi .campus:hover{
+    box-shadow: 2px 4px 5px rgba(28, 134, 7, 0.3);
+    cursor: pointer;
+}
+.baixo .campi .campus .nome{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 15px;
+
+}
+.baixo .campi .campus .ler-mais {
+    color: #15803D;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.baixo .campi .campus .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/Porto1.png);
+}
+.baixo .campi .campus:nth-child(2) .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/Porto2.png);
+}
+.baixo .campi .campus:nth-child(3) .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/ariquemes.jfif);
+}
+.baixo .campi .campus:nth-child(4) .foto{
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    background-image: url(/public/ji-parana.png);
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+.direita > div:nth-child(1) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    align-items: center ;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.direita > div:nth-child(1) > div h3 {
+    /* background-color: red; */
+    width: 100%;
+}
+.direita > div:nth-child(1) > div > div {
+    display: flex;
+    width: 100%;
+    min-width: 250px;
+    background-color: #F9FAFB;
+    border-radius: 6px;
+    gap: 10px;
+    color: #374151;
+    height: 48px;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.direita > div:nth-child(1) > div > div:hover{
+    background-color: yellow;
+    filter: brightness(1.2);
+}
+.direita > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    align-items: center ;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: auto;
+}
+.direita > div:nth-child(2) > div h3 {
+    /* background-color: red; */
+    width: 100%;
+}
+.direita > div:nth-child(2) > div > div > div:nth-child(1){
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-self: center;
+    background-color: #a9f5bc49;
+    border-radius: 6px;
+
+}
+.direita > div:nth-child(2) > div > div > div > h4{
+    color: #166534;
+}
+.direita > div:nth-child(2) > div > div > div:nth-child(1) > p{
+    color: #6B7280;
+    font-size: 17px;
+}
+.direita > div:nth-child(2) > div > div > div:nth-child(1) > p:nth-child(3){
+    color: #15803D;
+    cursor: pointer;
+}
+.direita > div:nth-child(2) > div >  .portal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #166534;
+    align-self: self-start  ;
+    cursor: pointer;
+} 
+.direita > div:nth-child(3) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    padding: 30px;
+    align-items: start ;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: auto;
+    
+}
+.direita > div:nth-child(3) > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.direita > div:nth-child(3) > div > div:nth-child(2) > p{
+    display: flex;
+    color: #374151;
+    gap: 10px;
+}
+.direita > div:nth-child(3) > div > div:nth-child(2) > p:nth-child(5){
+    color: #15803D;
+    cursor: pointer;
+
+}
+}
