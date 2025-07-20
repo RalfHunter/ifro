@@ -95,7 +95,7 @@ main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > di
     background-image: url(/public/Image.png);
     /* align-items: center;
     justify-content: end; */
-    background-color: red;
+    /* background-color: red; */
 }
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card:nth-child(2) > div:nth-child(1) > div{
     background-color: #15803D;
@@ -392,6 +392,7 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
     justify-content: space-between;
     gap: 20px;
     flex-wrap: nowrap;
+    /* align-self: center; */
     /* background-color: rebeccapurple; */
 }
 main > .pilar >  .esquerda{
@@ -426,7 +427,7 @@ main > .pilar > .esquerda > .topo > .cards-fotos > div{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 30px;
 }
 main > .pilar > .esquerda  >.topo > .cards-fotos > div > .card {
@@ -526,7 +527,7 @@ main > .pilar > .esquerda > .topo > .eventos {
     justify-content: space-between;
     width: 100%;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 main > .pilar > .esquerda > .topo > .eventos > .evento {
     display: flex;
@@ -758,6 +759,8 @@ main > .pilar > .esquerda > .topo > .eventos .evento > div:nth-child(2){
 .direita > div:nth-child(3) > div > div:nth-child(2) > p:nth-child(5){
     color: #15803D;
     cursor: pointer;
-
+}
+main > .pilar {
+    margin-bottom: 60px;
 }
 }

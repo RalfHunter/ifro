@@ -2,6 +2,7 @@
 import './styles/header/header.css'
 import './styles/header/header2.css'
 import './styles/main/main.css'
+import './styles/footer/footer.css'
 
 const app = document.querySelector<HTMLDivElement>("#app")!
 
